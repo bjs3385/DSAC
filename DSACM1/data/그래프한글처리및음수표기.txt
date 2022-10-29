@@ -1,0 +1,28 @@
+﻿# 그래프에서 한글처리
+from matplotlib import font_manager, rc
+font_name = font_manager.FontProperties(fname="c:/Windows/Fonts/malgun.ttf").get_name()
+rc('font', family=font_name)
+
+# 그래프에서 음수표기
+matplotlib.rcParams['axes.unicode_minus'] = False  #'-' 부호가 제대로 표시되게 하는 설정 
+
+# 그래프에서 platform 설정 한글처리 및 음수표기
+
+import platform
+from matplotlib import font_manager, rc 
+import matplotlib
+
+matplotlib.rcParams['axes.unicode_minus'] = False  #'-' 부호가 제대로 표시되게 하는 설정 
+
+#운영 체제마다 한글이 보이게 하는 설정 # 윈도우
+
+if platform.system() == 'Windows':  # 윈도우
+    path = "c:\Windows\Fonts\malgun.ttf"
+    font_name = font_manager.FontProperties(fname=path).get_name() 
+    rc('font', family=font_name)
+#맥
+elif platform.system() == 'Darwin': 
+    rc('font', family='AppleGothic')
+#리눅스
+elif platform.system() == 'Linux':
+    rc('font', family='NanumBarunGothic')

@@ -1,0 +1,7 @@
+Mon	Kim	1708
+Tue	Bark	2235
+Wed	Lee	3257
+Thu	Show	2587
+Fri	Hee	7895
+Sat	Good	2365
+Sun	Choi	7854

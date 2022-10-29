@@ -1,0 +1,8 @@
+Day, Name,No, 지역
+Mon, Kim, 1708, 부산
+Tue, Bark, 2235, 서울
+Wed, Lee, 3257, 대구
+Thu, Show, 2587, 광주
+Fri, Hee, 7895, 경주
+Sat, Good, 2365, 울산
+Sun, Choi, 7854, 마산
